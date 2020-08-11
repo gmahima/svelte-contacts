@@ -2,6 +2,25 @@
     import contacts from './stores/contacts'
     console.log($contacts)
     console.log(contacts)
+    let name;
+    let phone;
+    let email;
+    let starred=false;
+    const handleSubmit = (e) => {
+        e.preventDefault()
+
+        contacts.addContact({name, phone, email, starred})
+    }
 </script>
 
-<div></div>
+<form on:submit={handleSubmit}>
+    <input bind:value={name} placeholder="name">
+    <input type="tel" bind:value={phone} placeholder="phone">
+    <input type="email" bind:value={email} placeholder="email">
+    <label>
+        <input type="checkbox" bind:value={starred}>
+        starred
+    </label>
+    
+    <button type="submit" class="border border-red-300">submit</button>
+</form>
