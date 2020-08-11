@@ -13,7 +13,7 @@
     }
 </script>
 
-<form on:submit={handleSubmit}>
+<form on:submit={handleSubmit} class="flex flex-col border border-red-300">
     <input bind:value={name} placeholder="name">
     <input type="tel" bind:value={phone} placeholder="phone">
     <input type="email" bind:value={email} placeholder="email">

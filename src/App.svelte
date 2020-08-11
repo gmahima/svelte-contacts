@@ -14,8 +14,12 @@
 
 <div class="bg-gray-100 rounded-lg text-center h-full min-h-screen flex flex-col ">
 	<h1 class="bg-teal-400 p-4 sm:text-4xl text-white capitalize">My contacts</h1>
-	<AddContactForm />
-	<ContactList />
+	<div class="flex justify-around border border-red-700 my-auto">
+		<ContactList />
+		<AddContactForm />
+	</div>
+	
+	
 	
 </div>
 
