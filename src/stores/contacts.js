@@ -1,14 +1,14 @@
 import { writable } from 'svelte/store';
 
 const InitialContacts = [
-    {   name: 'john doe',
+    {   name: 'Uzumaki Naruto',
         phone: '1234567890',
-        email: 'john@sample.com',
+        email: 'ramen@sample.com',
         starred: false
     },
-    {   name: 'jane doe',
+    {   name: 'Gon Freecs',
         phone: '6789012345',
-        email: 'jane@sample.com',
+        email: 'gon@sample.com',
         starred: false
     }
 ]
