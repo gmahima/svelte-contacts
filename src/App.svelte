@@ -13,9 +13,9 @@
 	// });
 </script>
 
-<div class="bg-gray-100  text-center h-full min-h-screen flex flex-col ">
+<div class="bg-gray-100  text-center h-full min-h-screen flex flex-col pb-40 ">
 	<Router url="{url}">
-		<div class=" flex justify-between capitalize border-b border-gray-400 px-8 sm:px-40 sm:mb-40 fixed sm:static w-full">
+		<div class=" flex justify-between capitalize border-b border-gray-400 px-8 sm:px-40 sm:mb-10 fixed sm:static w-full">
 			<h1 class="text-sm sm:text-3xl py-2 text-gray-700 font-bold sm:font-semibold">My contacts</h1>
 			<nav class=" flex items-center justify-between text-xs sm:text-lg">
 				<NavLink to="/" className="mr-2 sm:mr-4">Contacts</NavLink>
