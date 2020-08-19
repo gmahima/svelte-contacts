@@ -5,7 +5,7 @@ const InitialContacts = [
         phone: '1234567890',
         email: 'ramen@sample.com',
         starred: false,
-        img: ''
+        img: 'https://source.unsplash.com/160x160/?flower'
     },
     {   name: 'Gon Freecs',
         phone: '6789012345',
