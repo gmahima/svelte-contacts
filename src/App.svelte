@@ -13,16 +13,16 @@
 	// });
 </script>
 
-<div class="bg-gray-100 rounded-lg text-center h-full min-h-screen flex flex-col ">
+<div class="bg-gray-100  text-center h-full min-h-screen flex flex-col ">
 	<Router url="{url}">
-		<div class=" flex justify-between capitalize border-b border-gray-400 px-40 mb-40">
-			<h1 class="sm:text-3xl py-2 text-gray-700 font-semibold">My contacts</h1>
-			<nav class=" flex items-center justify-between text-lg">
-				<NavLink to="/" className="mr-4">Contacts</NavLink>
+		<div class=" flex justify-between capitalize border-b border-gray-400 px-8 sm:px-40 sm:mb-40 fixed sm:static w-full">
+			<h1 class="text-sm sm:text-3xl py-2 text-gray-700 font-bold sm:font-semibold">My contacts</h1>
+			<nav class=" flex items-center justify-between text-xs sm:text-lg">
+				<NavLink to="/" className="mr-2 sm:mr-4">Contacts</NavLink>
 				<NavLink to="add-contact">Add Contact</NavLink>
 			</nav>
 		</div>
-		<div class="mx-40">
+		<div class="mx-8 sm:mx-40">
 			<Route path="add-contact" component="{AddContactForm}" />
 			<Route path="/" component="{ContactList}" />
 		</div>
