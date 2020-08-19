@@ -11,7 +11,7 @@ const InitialContacts = [
         phone: '6789012345',
         email: 'gon@sample.com',
         starred: false,
-        img: ''
+        img: 'https://source.unsplash.com/160x160/?flower'
     }
 ]
 const {subscribe, set, update} = writable(InitialContacts)
@@ -19,6 +19,9 @@ const {subscribe, set, update} = writable(InitialContacts)
 const addContact = (contact) => {
     if(contact.starred === undefined) {
         contact.starred = false
+    }
+    if(contact.img === undefined) {
+        contact.img = 'https://source.unsplash.com/160x160/?flower'
     }
     update(contacts => [contact, ...contacts])
 }
