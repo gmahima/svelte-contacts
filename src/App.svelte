@@ -15,16 +15,18 @@
 
 <div class="bg-gray-100 rounded-lg text-center h-full min-h-screen flex flex-col ">
 	<Router url="{url}">
-		<div class=" flex justify-between capitalize border-b border-gray-300">
-			<h1 class="sm:text-3xl ml-4 py-2 text-gray-700 font-semibold">My contacts</h1>
+		<div class=" flex justify-between capitalize border-b border-gray-400 px-40 mb-40">
+			<h1 class="sm:text-3xl py-2 text-gray-700 font-semibold">My contacts</h1>
 			<nav class=" flex items-center justify-between text-lg">
-				<NavLink to="/">Contacts</NavLink>
+				<NavLink to="/" className="mr-4">Contacts</NavLink>
 				<NavLink to="add-contact">Add Contact</NavLink>
 			</nav>
 		</div>
-		
+		<div class="mx-40">
 			<Route path="add-contact" component="{AddContactForm}" />
 			<Route path="/" component="{ContactList}" />
+		</div>
+			
 		
  
 	</Router>

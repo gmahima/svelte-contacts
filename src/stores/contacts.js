@@ -4,12 +4,14 @@ const InitialContacts = [
     {   name: 'Uzumaki Naruto',
         phone: '1234567890',
         email: 'ramen@sample.com',
-        starred: false
+        starred: false,
+        img: ''
     },
     {   name: 'Gon Freecs',
         phone: '6789012345',
         email: 'gon@sample.com',
-        starred: false
+        starred: false,
+        img: ''
     }
 ]
 const {subscribe, set, update} = writable(InitialContacts)
