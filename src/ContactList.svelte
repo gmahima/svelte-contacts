@@ -6,7 +6,7 @@
 
 <div>
     {#each $contacts as c} 
-    <div class="bg-white rounded-lg flex flex-col border border-red-600">
+    <div class="bg-white rounded-lg flex flex-col ">
         <div><span>name</span>: <span>{c.name}</span></div>
         <div><span>phone</span>: <span>{c.phone}</span></div>
         <div><span>email</span>: <span>{c.email}</span></div>

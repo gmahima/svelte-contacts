@@ -3,6 +3,7 @@
 	import ContactList from './ContactList.svelte'
 	import AddContactForm from './AddContactForm.svelte'
 	import { Router, Route, Link } from "svelte-routing";
+	import NavLink from './NavLink.svelte'
 	export let url = "";
 
 // contacts.subs returns a function to run before unmount
@@ -14,11 +15,11 @@
 
 <div class="bg-gray-100 rounded-lg text-center h-full min-h-screen flex flex-col ">
 	<Router url="{url}">
-		<div class="bg-teal-400 flex justify-between">
-			<h1 class=" p-4 sm:text-4xl text-white capitalize">My contacts</h1>
-			<nav>
-				<Link to="/">Home</Link>
-				<Link to="add-contact">Add Contact</Link>
+		<div class=" flex justify-between capitalize border-b border-gray-300">
+			<h1 class="sm:text-3xl ml-4 py-2 text-gray-700 font-semibold">My contacts</h1>
+			<nav class=" flex items-center justify-between text-lg">
+				<NavLink to="/">Contacts</NavLink>
+				<NavLink to="add-contact">Add Contact</NavLink>
 			</nav>
 		</div>
 		
